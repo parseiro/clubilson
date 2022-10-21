@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "browserslist": "^4.21.4",
+    "flowbite": "^1.5.3",
     "gulp": "^4.0.2",
     "gulp-css": "^0.1.0",
     "gulp-postcss": "^9.0.1",
