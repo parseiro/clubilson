@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html class="no-js" lang="pt-br">
   <head>
     <meta charset="utf-8" />
     <title></title>
@@ -15,8 +15,8 @@
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
 
-<!--    <link rel="stylesheet" href="css/normalize.css" />-->
-<!--    <link rel="stylesheet" href="css/main.css" />-->
+    <!--    <link rel="stylesheet" href="css/normalize.css" />-->
+    <!--    <link rel="stylesheet" href="css/main.css" />-->
     <link rel="stylesheet" href="build/style.css" />
     <link
       rel="stylesheet"
@@ -26,7 +26,9 @@
     <meta name="theme-color" content="#fafafa" />
   </head>
 
-  <body class="flex flex-col">
+  <body
+    class="container mx-auto flex max-w-5xl flex-col scroll-smooth border-solid border-gray-100 justify-between"
+  >
     <header>
       <nav
         class="rounded border-gray-200 bg-white px-2 py-2.5 dark:bg-gray-900 sm:px-4"
@@ -34,15 +36,20 @@
         <div
           class="container mx-auto flex flex-wrap items-center justify-between"
         >
-          <span
-            class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
-            >Leitões Grill</span
-          >
+          <div class="flex flex-col">
+            <span
+              class="whitespace-nowrap font-display text-2xl sm:text-3xl md:text-4xl font-bold text-red-500 dark:text-white"
+              >Leitões Grill</span
+            >
+            <span class="text-md sm:text-md md:text-lg whitespace-nowrap font-display text-red-800">
+              O melhor açougue de Curitiba
+            </span>
+          </div>
 
           <button
             data-collapse-toggle="navbar-default"
             type="button"
-            class="ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+            class="ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 sm:hidden"
             aria-controls="navbar-default"
             aria-expanded="false"
           >
@@ -61,53 +68,171 @@
               ></path>
             </svg>
           </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <div class="hidden w-full sm:block sm:w-auto" id="navbar-default">
             <ul
-              class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:text-sm md:font-medium md:dark:bg-gray-900"
+              class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 dark:border-gray-700 dark:bg-gray-800 sm:mt-0 sm:flex-row sm:space-x-8 sm:border-0 sm:bg-white sm:text-sm sm:font-medium sm:dark:bg-gray-900"
             >
               <li>
                 <a
-                  href="#"
-                  class="block rounded bg-blue-700 py-2 pr-4 pl-3 text-white dark:text-white md:bg-transparent md:p-0 md:text-blue-700"
+                  href="#produtos"
+                  class="block rounded bg-blue-700 py-2 pr-4 pl-3 text-white dark:text-white sm:bg-transparent sm:p-0 sm:text-blue-700"
                   aria-current="page"
-                  >Home</a
+                  >Produtos</a
                 >
               </li>
               <li>
-                <a
-                  href="#"
-                  class="block rounded py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block rounded py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block rounded py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
-                  >Pricing</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block rounded py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
-                  >Contact</a
-                >
+                <a href="#sobre" class="navbar-item">Sobre</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="flex flex-col flex-nowrap justify-between gap-y-6 mt-6">
+      <div id="produtos" class="flex flex-wrap justify-around gap-y-5">
+        <div class="imgcarne">
+          <img src="img/prime_ribs.webp" alt="Prime ribs tomahawk" />
+
+          <p class="text-center">Prime Rib Tomahawk</p>
+        </div>
+
+        <!--      <div class="imgcarne texto color-g8 t-size-20 p-20 d-flex">
+          <blockquote>"O melhor restaurante é a nossa casa."</blockquote>
+        </div>-->
+
+        <div class="imgcarne">
+          <div class="imgcontainer">
+            <img src="img/t_bone_angus.webp" alt="T Bone Angus" />
+          </div>
+          <div class="text-align-center">T Bone Angus</div>
+        </div>
+
+        <!--      <div class="imgcarne texto color-g8 t-size-20 p-20 d-flex">
+          <blockquote>Temos cortes uruguaios e argentinos.</blockquote>
+        </div>-->
+
+        <div class="imgcarne">
+          <div class="imgcontainer">
+            <img src="img/images_jpgANCHO.jpg" alt="Ancho" />
+          </div>
+          <div class="text-align-center">Ancho Angus Uruguaio</div>
+        </div>
+
+        <div class="imgcarne">
+          <div class="imgcontainer">
+            <img src="img/LINGUICAS.jpg" alt="Linguiças" />
+          </div>
+          <div class="text-align-center">Linguiças especiais</div>
+        </div>
+
+        <div class="imgcarne">
+          <div class="imgcontainer">
+            <img src="img/images (1)_jpgavestruz 2.jpg" alt="Avestruz" />
+          </div>
+          <div class="text-align-center">Cortes de Avestruz</div>
+        </div>
+
+        <div class="imgcarne">
+          <div class="imgcontainer">
+            <img src="img/images (1)_jpgcabrito pernil 5.jpg" alt="Cabrito" />
+          </div>
+          <div class="text-align-center">Cortes de Cabrito</div>
+        </div>
+
+        <div class="imgcarne">
+          <div class="imgcontainer">
+            <img src="img/carne codorna2.jpg" alt="Codornas" />
+          </div>
+          <div class="text-align-center">Codornas Europeias</div>
+        </div>
+
+        <div class="imgcarne">
+          <div class="imgcontainer">
+            <img src="img/coelho.jpg" alt="Coelho" />
+          </div>
+          <div class="text-align-center">Coelho (inteiro ou partes)</div>
+        </div>
+
+        <div class="imgcarne">
+          <div class="imgcontainer">
+            <img src="img/rã.jpg" alt="Rã" />
+          </div>
+          <div class="text-align-center">Rã</div>
+        </div>
+
+        <div class="imgcarne">
+          <div class="imgcontainer">
+            <img src="img/picanha javali temra.jpg" alt="Picanha de Javali" />
+          </div>
+          <div class="text-align-center">Picanha de Javali</div>
+        </div>
+
+        <div class="imgcarne">
+          <div class="imgcontainer">
+            <img src="img/jacaré.jpg" alt="Jacaré" />
+          </div>
+          <div class="text-align-center">Cortes de Jacaré</div>
+        </div>
+
+        <div class="imgcarne">
+          <div class="imgcontainer">
+            <img
+              src="img/images_jpgFILE DE PATO.jpg"
+              alt="Filé do Peito de Pato"
+            />
+          </div>
+          <div class="text-align-center">Filé do peito de pato</div>
+        </div>
+
+        <div class="imgcarne">
+          <div class="imgcontainer">
+            <img src="img/LEITAO 2.jpg" alt="Leitão" />
+          </div>
+          <div class="text-align-center">Leitão inteiro</div>
+        </div>
+      </div>
+
+      <div id="sobre" class="align-center mx-auto flex flex-col max-w-lg  border-solid border-gray-300">
+        <div class="mb-2">
+        <h1
+          class="whitespace-nowrap font-display text-5xl font-bold text-red-500 dark:text-white"
+        >
+          Leitões Grill
+        </h1>
+        <h2
+          class="whitespace-nowrap font-display text-3xl font-bold text-red-800"
+        >
+          O melhor açougue de Curitiba
+        </h2>
+        </div>
+        <p
+          class="contato flex items-center whitespace-nowrap text-xl font-medium leading-relaxed"
+        >
+          <span class="material-symbols-outlined mr-3"> restaurant </span>
+          Av Sete de Setembro, 1512, Curitiba-PR
+        </p>
+        <p
+          class="contato flex items-center whitespace-nowrap text-xl font-medium  leading-relaxed"
+        >
+          <span class="material-symbols-outlined mr-3"> call </span> (41) 9-8765-4321
+        </p>
+        <p
+          class="contato flex items-center whitespace-nowrap text-xl font-medium  leading-relaxed"
+        >
+          <span class="material-symbols-outlined mr-3"> send </span>
+          leitoes@pururuca.com.br
+        </p>
+      </div>
+    </main>
+    <footer class="t-size- text-center text-red-500">
+      Leonardo
+      <span class="hidden" aria-hidden="true">some daqui</span> leonardo@<span
+        class="hidden"
+        aria-hidden="true"
+        >some daqui</span
+      >vilelapinheiro<span class="hidden" aria-hidden="true">some daqui</span
+      >.com
+    </footer>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>

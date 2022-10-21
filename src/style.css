@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -61,4 +61,23 @@
 
 .button.button-danger:disabled {
   @apply bg-red-200 !important;
+}
+
+@layer components {
+  .navbar-item {
+    @apply block rounded py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white sm:border-0 sm:p-0 sm:hover:bg-transparent sm:hover:text-blue-700 sm:dark:hover:bg-transparent sm:dark:hover:text-white;
+  }
+
+  .imgcarne {
+    @apply flex h-80 w-80 flex-col justify-around rounded-b-lg bg-orange-100 text-center text-red-700 shadow hover:shadow-lg;
+
+    flex: 0 0 300px;
+
+  }
+
+  .imgcarne img {
+    @apply h-72 w-80 object-cover;
+  }
+
+
 }
