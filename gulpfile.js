@@ -22,7 +22,8 @@ gulp.task("css", () => {
 });
 
 function watch() {
-  gulp.watch("src/*.css", gulp.series("css"));
+  gulp.watch(["src/*.css", "**/*.html"], gulp.series("css"));
+  // gulp.watch("src/*.css", gulp.series("css"));
 }
 
 gulp.task("watch", watch);
