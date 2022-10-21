@@ -5,6 +5,9 @@
   "keywords": "",
   "license": "",
   "author": "",
+  "browserslist": [
+    "defaults"
+  ],
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",
@@ -17,6 +20,7 @@
     "tailwindcss": "^3.2.0"
   },
   "dependencies": {
+    "browserslist": "^4.21.4",
     "gulp": "^4.0.2",
     "gulp-css": "^0.1.0",
     "gulp-postcss": "^9.0.1",
