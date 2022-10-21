@@ -10,11 +10,11 @@ gulp.task("css", () => {
     .pipe(sourcemaps.init())
     .pipe(
       postcss([
+        require("postcss-nesting"),
         require("tailwindcss"),
         require("autoprefixer")({
           cascade: false,
         }),
-        require("postcss-nested"),
       ])
     )
     .pipe(sourcemaps.write("."))
