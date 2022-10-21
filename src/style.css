@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+  @apply inline-flex items-center rounded-md border border-transparent bg-gray-100 px-4 py-2 text-sm font-semibold tracking-normal text-gray-800 ring-gray-300 transition duration-150 ease-in-out disabled:bg-gray-100 disabled:text-gray-300;
+}
+
+.button.btn-sm {
+  @apply px-1 py-0 leading-none;
+}
+
+.button:hover {
+  @apply bg-gray-200 disabled:bg-gray-100 disabled:text-gray-300;
+}
+
+.button:active,
+.button:focus {
+  @apply bg-gray-300 ring disabled:bg-gray-100 disabled:text-gray-300;
+}
+
+.button.button-primary {
+  @apply bg-indigo-500 text-white !important;
+}
+
+.button-primary:hover,
+.button.button-primary:active,
+.button.button-primary:focus {
+  @apply bg-indigo-600 !important;
+}
+
+.button.button-primary:disabled {
+  @apply bg-indigo-300 !important;
+}
+
+.button.button-success {
+  @apply bg-green-500 text-white !important;
+}
+
+.button-success:hover,
+.button.button-success:active,
+.button.button-success:focus {
+  @apply bg-green-600 !important;
+}
+
+.button.button-success:disabled {
+  @apply bg-green-400 !important;
+}
+
+.button.button-danger {
+  @apply bg-red-500 text-white !important;
+}
+
+.button-danger:hover,
+.button.button-danger:active,
+.button.button-danger:focus {
+  @apply bg-red-600 !important;
+}
+
+.button.button-danger:disabled {
+  @apply bg-red-200 !important;
+}
