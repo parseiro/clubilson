@@ -10,7 +10,7 @@
     "defaults"
   ],
   "scripts": {
-    "build": "tsc && vite build",
+    "build": "tsc && vite build --base=./",
     "dev": "npx vite",
     "preview": "npx vite preview",
     "start": "npm run build && npm run dev",
